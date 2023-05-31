@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Automation interview Questions</title>
+        <link rel="stylesheet" type="text/css" href="concept.css">
+    </head>
+    <body>
+        <div id="color">
+        <div class="back">
+            <a href="Project1.php">BACK</a>
+            </div>
+        <div id="A2">
+            <marquee><h2> <b>More contents will be added...!</b></marquee></h2>
+        </div><br>
+        <div id="Automation">
+            <h4>Automation Testing</h4>
+       <br>
+       <table>
+        <tr>
+            <td>1. </td>
+            <td>What do you mean by Exceptions in Java? </td>
+            <td>Exception is like any interruption in our normal flow. Like if we are running anything and we got issues in
+                our script this is we called exception, we have 2 types of exception Run Time & Compile Time. (checked &
+                Unchecked exceptions) </td>
+        </tr>
+        <tr>
+            <td> 2.</td>
+            <td>Can you tell me about difference between Throw and Throws keyword? </td>
+            <td> Throw is a keyword used inside a body of function.<li> And Throws used while initializing any method. By
+                using Throw we can throw only one exception while for Throws we can declare multiple exceptions which
+                might occur in that particular function.</li> <li>Throws keyword followed by instance name and Throw keyword is
+                followed by class name of that exception.</li></td>
+        </tr>
+        <tr>
+            <td> 3.</td>
+            <td> Which locator you are using in your framework and why?</td>
+            <td><li>Mostly we used ID and Xpath because Id is the fastest and unique one and after that we prefer Xpath.</li>
+               <li> Anyways we have other locators as well like css , class name, tag name, Link text, Partial Link text. </li> </td>
+        </tr>
+        <tr>
+            <td> 4.</td>
+            <td> What is the difference between findelement & findelements?</td>
+            <td>findelement will give the first appearance of that element which matches our locator, whereas
+                findelements will give us list of all the elements which is present over the webpage and matching our
+                locator. And if we don’t find the element findelement will give us nosuchelementexception whereas
+                findelements will return NULL/Empty list. </td>
+        </tr>
+        <tr>
+            <td> 5.</td>
+            <td> Can you tell me how you will handle multiple window in selenium.</td>
+            <td> We have windowhandle & windowhandles function for handling Multiple windows. Windowhandle will
+                give the string value of only the active window that is open whereas windowhandles will give set of all the
+                windows that are open in browser.</td>
+        </tr>
+        <tr>
+            <td> 6.</td>
+            <td> How you will move from one window to another?</td>
+            <td>First we will check what all windows are open by using driver.getwindowhandles, to get set of opened
+                windows , then I use iterator to iterate over each of the pages and inside for loop will check like Current
+                URL matches with the excepted page, if match then switch to that window by using
+                driver.switchTo(Destination window) -> to return back to main parent window use driver.defaultwindow. </td>
+        </tr>
+        <tr>
+            <td> 7.</td>
+            <td> Tell me the difference between Implicit & Explicit wait?</td>
+            <td> Implicit wait applies for all the elements and all the tests like if we give 10 sec of implicit wait it will wait
+                for 10 sec for each element before giving nosuchelement exceptions.
+                While Explicit wait can be applied for any particular step for which you want extra wait time so we can use
+                explicit wait. We can use mix of both waits to depend on the situation of the step.</td>
+        </tr>
+        <tr>
+            <td> 8.</td>
+            <td> Can you tell me some exceptions in selenium?</td>
+            <td> NoSuchElementException, NoSuchWindowException NoSuchframeException,
+                StaleElementReferenceException, TimeoutException.</td>
+        </tr>
+        <tr>
+            <td> 9.</td>
+            <td>Can you tell me about StaleElementReferenceException? </td>
+            <td> Stale means old or decayed, here it sounds like element which was present on that page is no longer
+                there or decayed. To handle this, we can refresh the webpage before pointing to that element. We can
+                write script for waiting via explicit wait by writing expected condition.refresh. Or we can go with page
+                object model in that we can over come this stale element exception.</td>
+        </tr>
+        <tr>
+            <td> 10.</td>
+            <td> What do you mean by User Defined Exception?</td>
+            <td> User Defined Exception or custom exception is creating your own exception class and throws
+                that exception using 'throw' keyword. This can be done by extending the class Exception. ... The keyword
+                “throw” is used to create a new Exception and throw it to the catch block.</td>
+        </tr>
+        <tr>
+            <td> 11.</td>
+            <td> Can you tell me what is assert in TestNG?</td>
+            <td> Assert is like verification where we check like expected thing and actual thing are same or not.</td>
+        </tr>
+        <tr>
+            <td>12. </td>
+            <td> How do you handle if XPath is changing dynamically?</td>
+            <td>Option 1: Look for any other attribute which Is not changing every time In that div node like name, class
+                etc. So If this div node has class attribute then we can write xpath as bellow.
+                //div[@class='post-body entry-content']/div[1]/form[1]/input[1]
+                Option 2: We can use absolute xpath (full xpath) where you do not need to give any attribute names In
+                xpath.
+                /html/body/div[3]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[1]/div/div/div/div[1]/div/div/di
+                v/div[1]/div[2]/div[1]/form[1]/input[1]
+                Option 3: We can use starts-with function. In this xpath's ID attribute, "post-body-" part remains same
+                every time. //div[starts-with(@id,'post-body-')]/div[1]/form[1]/input[1]
+                Option 4: We can use contains function. Same way you can use contains function as
+                bellow.div[contains(@id,'post-body-')]/div[1]/form[1]/input[1] </td>
+        </tr>
+        <tr>
+            <td>13. </td>
+            <td> What is a singleton class?</td>
+            <td> The Singleton's purpose is to control object creation, limiting the number of objects to only one. Since
+                there is only one Singleton instance, any instance fields of a Singleton will occur only once per class, just
+                like static fields. Singletons often control access to resources, such as database connections or sockets.
+                For example, if you have a license for only one connection for your database or your JDBC driver has trouble
+                with multithreading, the Singleton makes sure that only one connection is made or that only one thread
+                can access the connection at a time.</td>
+        </tr>
+        <tr>
+            <td> 14.</td>
+            <td> How you handle alert in selenium webdriver?</td>
+            <td>Simple alert(one option), Confirm Alert(Y/N), Prompt alert(enter any value)
+                Alert a= driver.switchTo().alert();
+                a.getText();
+                a.accept(), a.dismiss(), a.sendKeys(“name”); </td>
+        </tr>
+       </table>
+       </div>
+    </div>
+    </body>
+</html>

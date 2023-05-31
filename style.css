@@ -1,0 +1,258 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width:100%;
+    height:100px;
+    background-image: url("A4.JPEG");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.back
+{
+    align-items: center; 
+    padding-top: 40px;
+    padding-left: 80%;
+    >a{
+        font-weight: bold;
+    }
+}
+#Mani{
+    padding-top: 50px;
+    text-align: center;
+    width:100%;
+    font-size: 20px;
+    height:100px; 
+}
+#Ajith
+{
+    
+    text-align: center;
+    width:100%;
+    font-size: 20px;
+    height:100px; 
+}
+
+#A1
+{
+    background-color:whitesmoke;
+    width:100%;
+    height: 50px;
+    position: relative;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+.home
+{
+    margin: 0;
+   list-style-type: none;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    
+}
+.back{
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+#A2
+{
+background-color:grey;
+}
+.dropdown
+{
+    display:flex;
+    justify-content: center;
+    margin-top: 120px;
+    list-style-type: none;
+
+}
+.dropdown a
+{
+    display: block;
+    width:200px;
+    background-color: gray;
+    color:black;
+    font-family: 'Times New Roman';
+    padding: 10px,0;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+.dropdown a:hover
+{
+    background-color: aqua;
+}
+.developer
+{
+    list-style-type: none;
+    display:none;
+    
+}
+ul li:hover ul.developer
+{
+ display:block;
+ 
+}
+.tester
+{
+    list-style-type: none;
+    z-index: 999;
+    display:none;
+
+}
+
+ul li:hover ul.tester
+{
+    display:block;
+}
+#H1 nav
+ {
+    
+    align-items: center; 
+    justify-content:space-between;
+    padding-top: 40px;
+    padding-left: 63%;
+    padding-right: 11%; 
+}
+.menu
+{
+   padding-left: 20px; 
+}
+ nav ul li
+{ 
+    list-style-type:none;
+    display: inline-block;
+    padding:10px 20px;
+} 
+nav ul li a
+{
+    color:black;
+    font-weight: bold;
+ }
+
+.box{
+     color: red;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input label
+{
+margin-right: 0;
+}
+.btn
+{
+    width:100%;
+    height:45px;
+    cursor:pointer;
+    font-size: 1em;
+    color:1em;
+    color:black;
+    font-weight: 500;
+}
+ input[type="text"], input[type="password"] ,input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: aqua;
+    font-size: 16px;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:aqua;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: red;
+}
+a
+{
+    text-decoration:none;
+    font-size: 16px;
+    line-height: 20px;
+    color:white;
+    font-size: 20px;
+}
+
+
+a:hover
+{
+    color: white;
+}
+.c-aboutus {
+    >p
+    {
+        padding: 50px 380px;
+        text-align: center;
+        width:50%;
+        font-size: 20px;
+        height:100px; 
+        color: black;
+    }
+    >h1
+    {
+        padding-top: 200px;
+        text-decoration: underline;
+    }
+}
+.c-contact {
+    >h1
+    {
+        padding-top: 100px;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title> PYTHON INTERVIEW QUESTIONS</title>
+        <link rel="stylesheet" type="text/css" href="concept.css">
+    </head>
+    <body>
+        <div id="color">
+            <div class="back">
+                <a href="Project1.php">BACK</a>
+                </div>
+        <div id="A2">
+            <marquee><h2> <b>More contents will be added...!</b></marquee></h2>
+        </div><br>
+        <div id="python">
+        <h4>PYTHON</h4>
+        <br>
+        <table>
+            <tr>
+                <th> S.NO </th>
+                <th> Question </th>
+                <th> Answer </th>
+            </tr>
+            <tr>
+                <td>1. </td>
+                <td> What is Python? What are the benefits of using Python</td>
+                <td><li>Python is a high-level, interpreted, general-purpose programming language. 
+                    Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries.
+                     Additionally, python supports objects, modules, threads, exception-handling, and automatic memory management 
+                    which help in modelling real-world problems and building applications to solve these problems. </li>
+                    <li><b>Benefits of using Python:</b></li>
+                    <li> Python is a general-purpose programming language that has a simple, easy-to-learn syntax that emphasizes
+                         readability and therefore reduces the cost of program maintenance. Moreover, 
+                         the language is capable of scripting, is completely open-source, and supports third-party packages encouraging modularity and code reuse.
+                    </li>
+                    <li>Its high-level data structures, combined with dynamic typing and dynamic binding, attract a huge community
+                         of developers for Rapid Application Development and deployment.</li>
+                </td>
+            </tr>
+            <tr>
+                <td> 2.</td>
+                <td>What is a dynamically typed language? </td>
+                <td><li>
+                    Before we understand a dynamically typed language, we should learn about what typing is. 
+                    Typing refers to type-checking in programming languages. 
+                    In a strongly-typed language, such as Python, "1" + 2 will result in a type error since these 
+                    languages don't allow for "type-coercion" (implicit conversion of data types).
+                     On the other hand, a weakly-typed language, such as Javascript, will simply output "12" as result.
+                </li>
+            <li> Type-checking can be done at two stages -</li>
+            <li> <b>Static</b>Data Types are checked before execution.</li>
+            <li> <b> Dynamic</b>Data Types are checked during execution.
+                Python is an interpreted language, executes each statement line by line and thus type-checking 
+                is done on the fly, during execution. 
+                Hence, Python is a Dynamically Typed Language.</li>
+            </td>
+            </tr>
+            <tr>
+                <td> 3.</td>
+                <td> What is an Interpreted language?</td>
+                <td> An Interpreted language executes its statements line by line.
+                     Languages such as Python, Javascript, R, PHP, and Ruby are prime examples of Interpreted languages. 
+                     Programs written in an interpreted language runs directly from the source code,
+                     with no intermediary compilation step.</td>
+            </tr>
+            <tr>
+                <td> 4.</td>
+                <td>What is PEP 8 and why is it important? </td>
+                <td> PEP stands for <b>Python Enhancement Proposal</b>. A PEP is an official design document providing information to the Python community, or describing a new feature for Python or its processes. PEP 8 is especially important since it documents the style guidelines for Python Code. Apparently contributing to the 
+                    Python open-source community requires you to follow these style guidelines sincerely and strictly.</td>
+            </tr>
+            <tr>
+                <td>5. </td>
+                <td> What is Scope in Python?</td>
+                <td> <li>Every object in Python functions within a scope.
+                     A scope is a block of code where an object in Python remains relevant. 
+                     Namespaces uniquely identify all the objects inside a program. 
+                     However, these namespaces also have a scope defined for them where you could use their objects 
+                     without any prefix.
+                     A few examples of scope created during code execution in Python are as follows:
+                </li>
+                <li>A <b>local scope </b>refers to the local objects available in the current function.</li>
+                <li>A<b> global scope</b>refers to the objects available throughout the code execution since their inception. </li>
+                <li>A <b>module-level scope </b> refers to the global objects of the current module accessible in the program.</li>
+                <li>An <b> outermost scope</b>refers to all the built-in names callable in the program. 
+                    The objects in this scope are searched last to find the name referenced.</li>
+            </td>
+            </tr>
+            <tr>
+                <td>6. </td>
+                <td> What are lists and tuples? </td>
+                <td> Lists and Tuples are both sequence data types that can store a collection of objects in Python. 
+                    The objects stored in both sequences can have different data types. 
+                    Lists are represented with square brackets ['sara', 6, 0.19], 
+                    while tuples are represented with parantheses ('ansh', 5, 0.97).</td>
+            </tr>
+            <tr>
+                <td> 7.</td>
+                <td>What are the common built-in data types in Python? </td>
+                <td> There are several built-in data types in Python.
+                     Although, Python doesn't require data types to be defined explicitly during variable declarations 
+                     type errors are likely to occur if the knowledge of data types and their compatibility with each 
+                     other are neglected. 
+                     Python provides type() and isinstance() functions to check the type of these variables.
+                     These data types can be grouped into the following categories-</td>
+                 </tr>
+                 <tr>
+                    <td> 8.</td>
+                    <td> What is the use of self in Python?</td>
+                    <td> Self is used to represent the instance of the class. 
+                        With this keyword, you can access the attributes and methods of the class in python.
+                         It binds the attributes with the given arguments. 
+                         self is used in different places and often thought to be a keyword. 
+                        But unlike in C++, self is not a keyword in Python.</td>
+                 </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>What are Python namespaces? Why are they used? </td>
+                    <td> 
+
+                        <li>A namespace in Python ensures that object names in a program are unique and can be used without 
+                            any conflict.
+                             Python implements these namespaces as dictionaries with 'name as key' mapped to a 
+                             corresponding 'object as value'. This allows for multiple namespaces to use the same 
+                             name and map it to a separate object.
+                             A few examples of namespaces are as follows: </li>
+                             <li> <b>Local Namespace</b> includes local names inside a function. 
+                                the namespace is temporarily created for a function call and gets cleared when the function returns.</li>
+                                <li><b> Global Namespace</b> includes names from various imported packages/ modules that are being used in 
+                                    the current project. This namespace is
+                                     created when the package is imported in the script and lasts until the execution of the script.</li>
+                                <li><b>Built-in Namespace </b>includes built-in functions of core Python and built-in names for 
+                                    various types of exceptions.
+                                    <b>The lifecycle of a namespace</b> depends upon the scope of objects they are mapped to.
+                                     If the scope of an object ends, the lifecycle of that namespace comes to an end.
+                                     Hence, it isn't possible to access inner namespace objects from an outer namespace. </li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10. </td>
+                    <td>What is pickling and unpickling? </td>
+                    <td> <li> 
+                        Python library offers a feature - serialization out of the box. 
+                        Serializing an object refers to transforming it into a format that can be stored, 
+                        so as to be able to deserialize it,
+                         later on, to obtain the original object. Here, the pickle module comes into play.
+                    </li>
+                    <li>
+                        <b>Pickling:</b>
+                        Pickling is the name of the serialization process in Python. 
+                        Any object in Python can be serialized into a byte stream and dumped as a file in the memory.
+                         The process of pickling is compact but pickle objects can be compressed further.
+                          Moreover, pickle keeps track of the objects it has serialized and the serialization 
+                          is portable across versions.
+                            The function used for the above process is pickle.dump().
+                    </li>
+                    <li>
+                        <b> Unpickling:</b>
+                        Unpickling is the complete inverse of pickling. 
+                        It deserializes the byte stream to recreate the objects stored in the file and loads the object to memory.
+                    </li>
+                    <li> The function used for the above process is pickle.load().</li>
+                </td>
+                </tr>
+            </table>
+    </div>
+</div>
+    </body>
+    </html>

@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>JAVA INTERVIEW QUESTIONS</title>
+        <link rel="stylesheet" type="text/css" href="concept.css">
+    </head>
+    <body>
+        <div id="color">
+            <div class="back">
+                <a href="Project1.php">BACK</a>
+                </div>
+        <div id="A2">
+        <marquee><h2> <b>More contents will be added...!</b></marquee></h2>
+    </div><br>
+        <div id="java">
+            <br>
+            <h4>JAVA</h4>
+            <br>
+        <table>
+            <tr>
+                <th> S.NO </th>
+                <th> Question </th>
+                <th> Answer </th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>What is the difference between an Inner Class and a Sub-Class?</td>
+                <td><li>An Inner class is a class which is nested within another class.</li> 
+                    <li>An Inner class has access rights for the class which is nesting it and 
+                        it can access all variables and methods defined in the outer class.</li>
+                        <li> A sub-class is a class which inherits from another class called super class. </li>
+                            <li> Sub-class can access all public and protected methods and fields of its super class.</li>
+                </td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>What are the various access specifiers for Java classes?</td>
+                      <td> <li>In Java, access specifiers are the keywords used before a class name which defines the access
+                        scope. </li>
+                        <li> The types of access specifiers for classes are: </li>
+                            <li>1. Public : Class,Method,Field is accessible from anywhere.</li>
+                           <li> 2. Protected:Method,Field can be accessed from the same class to which they belong or from the
+                                    sub-classes,and from the class of same package,but not from outside.</li>
+                           <li> 3. Default: Method,Field,class can be accessed only from the same package and not from outside
+                            of it’s native package.</li>
+                           <li> 4. Private: Method,Field can be accessed from the same class to which they belong. </li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3. </td>
+                    <td> What's the purpose of Static methods and static variables?</td>
+                    <td>
+                        When there is a requirement to share a method or a variable between multiple objects of a
+class instead of creating separate copies for each object, we use static keyword to make a method
+or variable shared for all objects.
+                    </td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>What is data encapsulation and what's its significance? </td>
+                    <td> 
+                        <li> Encapsulation is a concept in Object Oriented Programming for combining properties and
+                            methods in a single unit.</li>
+                        <li>Encapsulation helps programmers to follow a modular approach for software development as
+                            each object has its own set of methods and variables and serves its functions independent of other
+                            objects. Encapsulation also serves data hiding purpose. </li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5. </td>
+                    <td> What is a singleton class? Give a practical example of its usage.</td>
+                    <td>
+                        <li>A singleton class in java can have only one instance and hence all its methods and variables belong
+                            to just one instance. Singleton class concept is useful for the situations when there is a need to
+                            limit the number of objects for a class. </li>
+                        <li> 
+                            <b> For EX:singleton usage scenario is when there is a limit of having only one
+                                connection to a database due to some driver limitations or because of any licensing issues.
+                            </b>
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td> What are Loops in Java? What are three types of loops?</td>
+                    <td>
+                        <li>Looping is used in programming to execute a statement or a block of statement repeatedly.
+                            There are three types of loops in Java: </li>
+                        <li>For Loops<br>
+                            For loops are used in java to execute statements repeatedly for a given number of times. For loops
+                            are used when number of times to execute the statements is known to programmer. </li>
+                        <li>While Loops <br>
+                            While loop is used when certain statements need to be executed repeatedly until a condition is
+                            fulfilled. In while loops, condition is checked first before execution of statements. </li>
+                        <li>  Do While Loops <br>
+                            Do While Loop is same as While loop with only difference that condition is checked after execution
+                            of block of statements. Hence in case of do while loop, statements are executed at least once.</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7. </td>
+                    <td>What is an infinite Loop? How infinite loop is declared? </td>
+                    <td>
+                        <li>An infinite loop runs without any condition and runs infinitely. An infinite loop can be broken
+                            by defining any breaking logic in the body of the statement blocks. </li>
+                        <li><b>
+                            Infinite loop is declared as follows:
+                            for (;;)<br>    
+                            {<br>
+                                // Statements to execute<br>
+                                // Add any loop breaking logic<br>
+                            }<br>
+                                </b> </li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8. </td>
+                    <td> What is the difference between double and float variables in Java?</td>
+                    <td>In java, float takes 4 bytes in memory while Double takes 8 bytes in memory. Float is single
+                        precision floating point decimal number while Double is double precision decimal number.
+                    </td>
+                </tr>
+                <tr>
+                    <td> 9.</td>
+                    <td>What is ternary operator? Give an example. </td>
+                    <td> 
+                        <li>Ternary operator , also called conditional operator is used to decide which value to assign to a
+                        variable based on a Boolean value evaluation. It's denoted as ?</li>
+                       <li> In the below example, if rank is 1, status is assigned a value of "Done" else "Pending".</li>
+                        <li><b>>public class conditionTest <br>
+                            {   <br>
+                        public static void main(String args[]) <br>
+                         {  <br>
+                        String status;  <br>
+                        int rank = 3; <br>
+                        status = (rank == 1) ? "Done" : "Pending"; <br>
+                        System.out.println(status); <br>
+                         }   <br>
+                        }</b></li>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 10.</td>
+                    <td>How can you generate random numbers in Java? </td>
+                    <td> 
+                        <li>Using Math.random() you can generate random numbers in the range greater than or equal
+                            to 0.1 and less than 1.0 </li>
+                        <li>Using Random class in package java.util </li>
+                    </td>
+                </tr>
+                
+
+
+
+                </table> 
+                </div>
+            </div>
+    </body>
+</html>
